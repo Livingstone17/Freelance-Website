@@ -1,0 +1,158 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" 
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <title>GetHelp</title>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <link rel=“stylesheet” href=“https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css” integrity=“sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T” crossorigin=“anonymous”>
+<!--            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+       
+         <link href="css/bootstrap.min.css" rel="stylesheet">
+         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        
+        <link href="css/style.css" rel="stylesheet">
+      <style>
+        
+        #updateForm{
+          margin-top:20px;
+          border-radius:10px;
+          box-shadow: 3rem;
+        }
+        .material-icons {
+                font-family: 'Material Icons';
+                font-weight: normal;
+                font-style: normal;
+                font-size: 80px;  /* Preferred icon size */
+                display: inline-block;
+                line-height: 1;
+                text-transform: none;
+                letter-spacing: normal;
+                word-wrap: normal;
+                white-space: nowrap;
+                direction: ltr;
+                margin-left: 180px;
+                margin-top: 10px;
+                color:blue;
+                margin-bottom:10px;
+            }
+            #btnMy{
+              border-radius:10px;
+              color:white;
+            }
+      
+      
+      
+      </style>   
+    </head>
+    <body>
+        
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg fixed-top container-fluid ">  
+            <a class="navbar-brand" href="index.html">Home</a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">  
+                   <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse " id="navbarSupportedContent">    
+                <ul class="navbar-nav mr-4">
+                   <li class="nav-item"><a class="nav-link" data-value="about" href="#">Explore</a></li>  
+                   <li class="nav-item"><a class="nav-link " data-value="portfolio"href="#">Join</a></li>
+                   <li class="nav-item"><a class="nav-link " data-value="team" href="#"></a></li>  
+
+                </ul> 
+               </div>
+            </nav>
+        <div class="container">
+            <h1>Welcome to A World of Possibilities</h1>  
+        </div>
+        <div>
+             <div class="container">
+                 <div id="displayProfile">
+                    <h5>Your Profile</h5>
+                 </div>
+                 <div class="container-div" id="yourProfile">
+
+
+                 </div>
+                 <div>
+                    <button id="btnMy" data-value="portfolio" class="btn btn-success"  data-toggle="modal" data-target="#editProfile">Edit Your Profile</button>
+                    <button type="button" class="btn btn-danger">Danger</button>
+               </div>   
+        </div>
+    </div>
+        
+                                      <!--MODAl for edit profile-->
+    
+  <div class="modal fade" id="editProfile" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Edit Profile</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <form>
+              <i class="material-icons">person_outline</i>
+              <div class="row">
+                <div class="col">
+                  <label>First name</label>
+                  <input type="text" class="form-control" id="firstname" placeholder="First name">
+                </div>
+                <div class="col">
+                  <label>Last Name</label>
+                  <input type="text" class="form-control" id="lastname" placeholder="Last name">
+                </div>
+              </div>
+            </form>
+            <form>
+                <div class="row">
+                  <div class="col">
+                    <label>Minimum Wage per hour</label>
+                    <input type="" class="form-control" id="minimumwage" placeholder="minimum wage">
+                  </div>
+                  <div class="col">
+                    <label>Phone Number</label>
+                    <input type="number" class="form-control" id="phonenumber" placeholder="+234">
+                  </div>
+                </div>
+              </form>
+              <form>
+                  <div class="row">
+                    <div class="col">
+                      <label>Your Bio</label>
+                     <textarea id="bio"></textarea>
+                    </div>
+                    <div class="col">
+                      <label>Address</label>
+                      <input type="text" class="form-control" id="address" placeholder="Address">
+                    </div>
+                  </div>
+                </form>
+                <button type="button" class="btn btn-primary btn-lg btn-block">Update Profile</button>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>   
+</div>
+
+<div class="container" id="updateDiv">
+   
+</div>
+     
+
+</body>
+
+
+</html>

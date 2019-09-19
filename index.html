@@ -21,25 +21,84 @@
             <link href="css/style.css" rel="stylesheet">
 
     </head>
+    <style>
+        .form-container {
+                top: 10%;;
+                width: 350px;
+                height: auto;
+                padding: 20px 30px;
+                background-color: white;
+                border-radius: 10px;
+                box-shadow: 0 0 10px 0 #000;
+                margin: auto;
+                position: relative;
+                
+            }
+            h2{
+                text-align: center;
+                margin-top: 30px;
+                margin-bottom: 20px;
+            }
+            .material-icons {
+                font-family: 'Material Icons';
+                font-weight: normal;
+                font-style: normal;
+                font-size: 80px;  /* Preferred icon size */
+                display: inline-block;
+                line-height: 1;
+                text-transform: none;
+                letter-spacing: normal;
+                word-wrap: normal;
+                white-space: nowrap;
+                direction: ltr;
+                margin-left: 110px;
+                margin-top: 10px;
+                color: brown;
+            }
+            ul.list{
+                list-style: none;
+                text-align: center;
+            }
+            ul.list li{
+                width: 250px;
+                margin-bottom: 15px;
+            }
+            ul.list li input{
+                width: 250px;
+                text-align: center;
+                padding: 10px;
+                border: none;
+                background-color: #d3d3d3;
+                border-radius: 5px;
+            }
+            #myBtn{
+                background-color: blue;
+                width: 250px;
+                height:30px;
+                border-radius: 10px;
+                box-shadow: none;
+            }
+                
+    </style>
     <body>
          <div class="container-fluid">
                <nav class="navbar navbar-expand-lg fixed-top container-fluid ">  
                     <a class="navbar-brand" href="#">Home</a>
             <div class="collapse navbar-collapse " id="navbarSupportedContent">
                 <ul class="navbar-nav mr-4">
-                    <li class="nav-item"><a class="nav-link" data-value="about" href="freelancers.html">Hire Men</a></li>  
+                    <li class="nav-item"><a class="nav-link " data-value="portfolio"href="#" data-toggle="modal" data-target="#userSignUp">Hire Men</a></li>  
                     <li class="nav-item"><a class="nav-link " data-value="portfolio"href="#" data-toggle="modal" data-target="#signUp">JOIN</a>    
                     </li>
                     <li class="nav-item"><a class="nav-link " data-value="portfolio"href="#" data-toggle="modal" data-target="#signIn">Sign In</a></li>  
                 </ul> 
             </div>
                     </nav>
-            <header class="header container-fluid">
+            <header class="header">
                 <div class="overlay"></div>
                 <div class="container">
     
                 </div>
-                <div class="description ">
+                <div class="description">
                     <h1>    Hello ,Welcome To the Ecosystem of geeks 
                     <p> Here we have the best guys committed to timely delivery, quality jobs and wonderful soft skills</p>   
                     <button class="btn btn-outline-secondary btn-lg">Explore</button></h1>  
@@ -64,17 +123,25 @@
                                     <input type="text" class="form-control" id="myName" aria-describedby="emailHelp" placeholder="username">
                                 </div>
                                 <div class="form-group">
-                                    <label for="myAddress">Specialty</label>
-                                    <input type="text" class="form-control" id="myAddress" aria-describedby="emailHelp" placeholder="your craft">
+                                    <label for="mySpecialty">Specialty</label>
+                                    <input type="text" class="form-control" id="mySpecialty" aria-describedby="emailHelp" placeholder="your craft">
                                 </div>
                                 <label for="signUpInputEmail1">Email address</label>
-                                <input type="email" class="form-control" id="myEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                <input type="email" class="form-control" id="myEmail" aria-describedby="emailHelp" placeholder="Enter email">
                                 <small id="emailHelp" class="form-text text-muted">Your email is safe with us</small>
                             </div>
+                                <div class="form-group">
+                                    <label for="myAddress">Phone Number</label>
+                                    <input type="number" class="form-control" id="pNumber" aria-describedby="emailHelp" placeholder="+234">
+                                </div>
                             <div class="form-group">
                                 <label for="signUpInputPassword1">Password</label>
                                 <input type="password" class="form-control" id="exampleInputPassword1" placeholder="******">
                                 <small id="emailHelp" class="form-text text-muted">not less than 6 characters</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="signUpInputPassword2">Confirm Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="******">
                             </div>
                     </form>
                 </div>
@@ -85,7 +152,6 @@
             </div>
         </div>
     </div>
-         
   
                             <!-- Modal for freelancers signIn -->
     <div class="modal fade" id="signIn" tabindex="-1" role="dialog" aria- labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -113,11 +179,41 @@
          </div>
              <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="submit" class="btn btn-primary" id="submit">Save changes</button>
+                <button type="submit" class="btn btn-primary" id="submit">Submit</button>
             </div>
      </div>
   </div>
  </div>
+
+
+
+        <!-- Modal for normal users' sign up -->
+
+
+        <div class="modal fade" id="userSignUp" tabindex="-1" role="dialog" aria- labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                            <div class="container">
+                                    <h2>Users' Sign Up</h2>
+                                    <div class="form-container">
+                                        <i class="material-icons">person_outline</i>
+                                    <ul class="list">
+                                        <li><input id="username" type="text" name="username" placeholder="username"></li>
+                                        <li><input id="email" type="email" name="email" placeholder="example@live.com"></li>
+                                        <li><input id="password" type="password" name="password" placeholder="**********"></li>
+                                        <li><button id="myBtn">Submit</button></li>
+                                    </ul>
+                                </div>     
+                   </div>
+                   <div class="modal-footer">
+                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                       <!-- <button type="submit" class="btn btn-primary" id="submitForm">Submit</button> -->
+                   </div>
+               </div>
+      </div>
+     </div>
+    
 </div>
   
         

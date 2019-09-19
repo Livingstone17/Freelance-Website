@@ -1,0 +1,116 @@
+body {
+    background-color: beige;
+    width:100%;
+    height: 100%;
+    justify-content: center;
+    font-family: Verdana, sans-serif;
+}
+
+.bg-dark{
+background-color:#343a40!important
+}
+.bg-primary{
+background-color:#007bff!important
+}
+.navbar{ background:#F97300;
+width: 100%;}
+
+.nav-link , .navbar-brand{ color: #f4f4f4; cursor: pointer;}
+
+.nav-link{ margin-right: 1em !important;}
+
+.nav-link:hover{ background: #f4f4f4; color: #f97300; }
+
+.navbar-collapse{ justify-content: flex-end;}
+
+.navbar-toggler{  background:#fff !important;}
+
+/*
+.container-div {
+    width: 100%;
+    height: 100%;
+*/
+.header{
+ background-image: url('../images/welcome2.jpg');
+ background-attachment: fixed;
+ background-size: cover;
+ background-position: center;
+}
+.overlay{
+ position: absolute;
+ min-height: 100%;
+ min-width: 100%;
+    left: 0;
+    top: 0;
+    background: black;
+    opacity: 0.79;
+/*    background: rgba(244, 244, 244, 0.79);*/
+}
+.description{
+    position: absolute;
+    top: 30%;
+    margin: auto;
+    padding: 2em;
+    
+}
+.description h1{
+ color:#F97300 ;
+}
+.description p{
+ color:#666;
+ font-size: 20px;
+ width: 50%;
+ line-height: 1.5;
+}
+.description button{
+ border:1px  solid #F97300;
+ background:#F97300;
+ color:#fff;
+}
+.blog{
+ margin: 4em 0;
+ position: relative; 
+}
+.blog h1{
+ color:#F97300;
+ margin: 2em; 
+}
+.blog .card{
+ box-shadow: 0 0 20px #ccc;
+}
+.blog .card img{
+ width: 100%;
+ height: 12em;
+}
+.blog .card-title{
+ color:#F97300;
+  
+}
+.blog .card-body{
+ padding: 1em;
+}
+#userCards{
+    margin-top: 50px;
+    height: auto;
+    width: 100%;
+}
+
+.footer {
+    background-color: orange;
+    height: 200px;
+}
+/*
+#bg-img {
+    
+    width: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    position:relative;
+    display: inline-block;
+    height: 100%;  
+}
+*/
+
+/* caption text */
+
+

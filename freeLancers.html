@@ -4,27 +4,33 @@
             <meta name="viewport" 
             content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
             <meta http-equiv="X-UA-Compatible" content="ie-edge">
-            <title>GetHelp</title>
-
-<!--
-            <link rel=“stylesheet”             href=“https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css” integrity=“sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T” crossorigin=“anonymous”>
-            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
--->
+            <title>Freelancers'</title>
             <script src="js/jquery-3.3.1.min.js"></script>
             <script src="js/index.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
             <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
             <link rel="stylesheet" href="css/bootstrap.min.css">
+            <link href="https://mdbootstrap.com/docs/jquery/content/icons-list/">
             <link href="css/style.css" rel="stylesheet">
 
-    </head>
-    
         <style>
-            *{margin: 0, padding:0}
+            *{margin: 0; padding:0;}
             body{
                 width: 100%;
                 background-color: beige;
+            }
+            .img-fluid {
+                height:100px;
+                border: 5px;
+            }
+            #searchnav{
+                background-color: transparent;
+                margin-left: 400px;
+        
+            }
+            #search{
+                margin-top:50px;
             }
             .blog{
                 margin: 4em 0;
@@ -48,11 +54,17 @@
             .blog .card-body{
                 padding: 1em;
             }
-            
+            .footer1{
+                height:200px;
+                margin-top:5px;
+                background-color: black;
+            }
                 
         </style>
+    </head>
     
-        <body>
+    
+        <body onload="getAll()">
             <div class="container-fluid">
                <nav class="navbar navbar-expand-lg fixed-top container-fluid ">  
                 <a class="navbar-brand" href="index.html">Home</a>
@@ -68,55 +80,29 @@
                     </ul> 
                    </div>
                 </nav>
-             <div class="blog">
-                    <div class="container">
-                        <h1 class="text-center">Freelancers</h1>
-                    <div class="row" >
-                        <div class="col-md-4 col-lg-4 col-sm-12" id="">
-                            <div class="card">
-                            <div class="card-img">
-                                <img src="images/posts/polit.jpg" class="img-fluid">
-                            </div>
-     
-                        <div class="card-body"id="freelancers" >
-                            <h4 class="card-title"></h4>
-                            <p class="card-text"></p>
-                             <p></p>
-                        </div>
-                        <div class="card-footer">
 
-                        </div>
-                        </div>
-                    </div>
-                <div class="col-md-4 col-lg-4 col-sm-12">
-                    <div class="card">
-                            <div class="card-img">
-                                <img src="images/posts/images.jpg" class="img-fluid">
-                            </div>
-                    <div class="card-body">
-                            <h4 class="card-title">dave Holmes</h4>
-                        <p class="card-text">Specialization: Content Writting</p>
-                        <p>Rating: 4</p>
-                    </div>
-                    <div class="card-footer">
-                    </div>
+                <div class="jumbotron">
+                        <nav class="navbar" id="searchnav">
+                            <form class="form-inline" id="search">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                            </form>
+                         </nav>
+                     <div class="blog">
+                    <div class="container"  id="freelancers">
+                    <h1 class="text-center">Meet Our Freelancers</h1>
                 </div>
-            </div>
-            <div class="col-md-4 col-lg-4 col-sm-12">
-                <div class="card">
-         <div class="card-img">
-        <img src="images/posts/imag2.jpg" class="img-fluid">
-        </div>
-     
-     <div class="card-body">
-            <h4 class="card-title">Sarah Does</h4>
-            <p class="card-text"> Specialization: Content Writting</p>
-            <p>Rating: 4</p>
-     </div>
+                     </div>
+
 </div>
-                
-                        </div>
-                </div>
-    </body>
+<footer class="page-footer font-small cyan darken-3">
+
+    
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2018 Copyright:
+          <a href="https://github.com/livingstone17/"> Powered By ZaoPhos</a>
+        </div>
+      
+      </footer>
 
 </html>

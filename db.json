@@ -1,0 +1,184 @@
+{
+  "Freelancers": [
+    {
+      "id": 1,
+      "name": "Dele",
+      "firstname": "samuel",
+      "lastname": "john",
+      "specialty": "Content writting",
+      "email": "example@me.com",
+      "phonenumber": 1234567890,
+      "password": "omobolaji1",
+      "minimumwage": 45,
+      "bio": "",
+      "address": "",
+      "rating": 5
+    },
+    {
+      "id": 2,
+      "name": "Dele",
+      "firstname": "samuel",
+      "lastname": "john",
+      "specialty": "Content writting",
+      "email": "example@me.com",
+      "phonenumber": 1234567890,
+      "password": "omobolaji1",
+      "minimumwage": 45,
+      "bio": "",
+      "address": "",
+      "rating": 5
+    },
+    {
+      "id": 3,
+      "name": "Dele",
+      "firstname": "samuel",
+      "lastname": "john",
+      "specialty": "Content writting",
+      "email": "example@me.com",
+      "phonenumber": 1234567890,
+      "password": "omobolaji1",
+      "minimumwage": 45,
+      "bio": "",
+      "address": "",
+      "rating": 5
+    },
+    {
+      "id": 4,
+      "name": "Dele",
+      "firstname": "samuel",
+      "lastname": "john",
+      "specialty": "Content writting",
+      "email": "example@me.com",
+      "phonenumber": 1234567890,
+      "password": "omobolaji1",
+      "minimum wage": 45,
+      "bio": "",
+      "address": "",
+      "rating": 5
+    },
+    {
+      "id": 5,
+      "name": "Dele",
+      "firstname": "samuel",
+      "lastname": "john",
+      "specialty": "Content writting",
+      "email": "example@me.com",
+      "phonenumber": 1234567890,
+      "password": "omobolaji1",
+      "minimumwage": 45,
+      "bio": "",
+      "address": "",
+      "rating": 5
+    },
+    {
+      "id": 6,
+      "name": "Dele",
+      "firstname": "samuel",
+      "lastname": "john",
+      "specialty": "Content writting",
+      "email": "example@me.com",
+      "phonenumber": 1234567890,
+      "password": "omobolaji1",
+      "minimumwage": 45,
+      "bio": "",
+      "address": "",
+      "rating": 5
+    },
+    {
+      "id": 7,
+      "name": "Dele",
+      "firstname": "samuel",
+      "lastname": "john",
+      "specialty": "Content writting",
+      "email": "example@me.com",
+      "phonenumber": 1234567890,
+      "password": "omobolaji1",
+      "minimumwage": 45,
+      "bio": "",
+      "address": "",
+      "rating": 5
+    },
+    {
+      "name": "Peter",
+      "id": 8
+    },
+    {
+      "name": "mary",
+      "id": 9
+    },
+    {
+      "name": "bunmi",
+      "mail": "bumight12@us.co",
+      "password": "omobunmi",
+      "id": 10
+    },
+    {
+      "name": "loveth",
+      "mail": "loveth@yahoo.com",
+      "password": "omobolaji1",
+      "id": 11
+    },
+    {
+      "name": "peter",
+      "mail": "boldam1@gmail.com",
+      "phonenumber": "08165786950",
+      "password": "",
+      "id": 12
+    },
+    {
+      "username": "zaophos",
+      "email": "peterson.omobolaji@gmail.com",
+      "password": "omobolaji1",
+      "id": 13
+    },
+    {
+      "username": "fredaline",
+      "email": "jsdjsfs.com",
+      "password": "bola12",
+      "id": 14
+    },
+    {
+      "username": "jide",
+      "email": "oluwaseun@gmail.com",
+      "password": "omogboye3",
+      "id": 15
+    },
+    {
+      "username": "ZaoPhos",
+      "email": "hdjsdjsds.com",
+      "password": "hsjdjsdsd",
+      "id": 16
+    },
+    {
+      "username": "hhada",
+      "email": "hjsdshjad.com",
+      "password": "omobolaji1",
+      "id": 17
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "Love",
+      "email": "example@me.com",
+      "password": "dada19"
+    },
+    {
+      "id": 2,
+      "username": "Bimpe",
+      "email": "example@me.com",
+      "password": "sexy12"
+    },
+    {
+      "id": 3,
+      "username": "fred",
+      "password": "loneboy2"
+    },
+    {
+      "username": "Love",
+      "email": "love@us.com",
+      "password": "oloveme2",
+      "id": 4
+    }
+  ]
+}
