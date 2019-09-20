@@ -15,7 +15,11 @@ background-color:#007bff!important
 .navbar{ background:#F97300;
 width: 100%;}
 
-.nav-link , .navbar-brand{ color: #f4f4f4; cursor: pointer;}
+.nav-link , .navbar-brand{ color: #f4f4f4; cursor: pointer; font-weight:900;}
+
+.navbar-brand:hover{
+    color: white;
+}
 
 .nav-link{ margin-right: 1em !important;}
 
@@ -36,36 +40,47 @@ width: 100%;}
  background-size: cover;
  background-position: center;
 }
-.overlay{
+/* .overlay{
  position: absolute;
  min-height: 100%;
  min-width: 100%;
     left: 0;
     top: 0;
     background: black;
-    opacity: 0.79;
+    opacity: 0.79; */
 /*    background: rgba(244, 244, 244, 0.79);*/
-}
+/* } */
 .description{
-    position: absolute;
-    top: 30%;
+    /* position: absolute;  */
+    /* margin-left: 250px; */
+    /* top: 30%;
     margin: auto;
-    padding: 2em;
+    padding: 2em; */
+    text-align: center;
+    justify-content: center; 
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    height: 800px;
     
 }
 .description h1{
  color:#F97300 ;
+ text-align:center;
 }
 .description p{
- color:#666;
+ color:#fff;
  font-size: 20px;
- width: 50%;
+ /* width: 50%; */
  line-height: 1.5;
+ /* text-align:center; */
 }
 .description button{
  border:1px  solid #F97300;
  background:#F97300;
  color:#fff;
+ justify-content: center;
 }
 .blog{
  margin: 4em 0;

@@ -27,18 +27,20 @@
                 width: 350px;
                 height: auto;
                 padding: 20px 30px;
-                background-color: white;
+                background-color:#fff;
                 border-radius: 10px;
                 box-shadow: 0 0 10px 0 #000;
                 margin: auto;
                 position: relative;
                 
             }
+          
             h2{
                 text-align: center;
                 margin-top: 30px;
                 margin-bottom: 20px;
             }
+           
             .material-icons {
                 font-family: 'Material Icons';
                 font-weight: normal;
@@ -83,11 +85,14 @@
     <body>
          <div class="container-fluid">
                <nav class="navbar navbar-expand-lg fixed-top container-fluid ">  
-                    <a class="navbar-brand" href="#">Home</a>
+                    <a class="navbar-brand" href="#">ENGAGER</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">  
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
             <div class="collapse navbar-collapse " id="navbarSupportedContent">
                 <ul class="navbar-nav mr-4">
-                    <li class="nav-item"><a class="nav-link " data-value="portfolio"href="#" data-toggle="modal" data-target="#userSignUp">Hire Men</a></li>  
-                    <li class="nav-item"><a class="nav-link " data-value="portfolio"href="#" data-toggle="modal" data-target="#signUp">JOIN</a>    
+                    <li class="nav-item"><a class="nav-link " data-value="portfolio"href="#" data-toggle="modal" data-target="#userSignUp">Hire Freelancers</a></li>  
+                    <li class="nav-item"><a class="nav-link " data-value="portfolio"href="#" data-toggle="modal" data-target="#signUp">Join</a>    
                     </li>
                     <li class="nav-item"><a class="nav-link " data-value="portfolio"href="#" data-toggle="modal" data-target="#signIn">Sign In</a></li>  
                 </ul> 
@@ -99,7 +104,7 @@
     
                 </div>
                 <div class="description">
-                    <h1>    Hello ,Welcome To the Ecosystem of geeks 
+                    <h1>    Hello, Welcome To the Ecosystem of geeks 
                     <p> Here we have the best guys committed to timely delivery, quality jobs and wonderful soft skills</p>   
                     <button class="btn btn-outline-secondary btn-lg">Explore</button></h1>  
                 </div>
@@ -179,7 +184,7 @@
          </div>
              <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+                <button type="button" class="btn btn-primary" id="submit">Submit</button>
             </div>
      </div>
   </div>
@@ -195,7 +200,7 @@
                 <div class="modal-content">
                     <div class="modal-body">
                             <div class="container">
-                                    <h2>Users' Sign Up</h2>
+                                    <h2>Become A Client</h2>
                                     <div class="form-container">
                                         <i class="material-icons">person_outline</i>
                                     <ul class="list">
@@ -228,28 +233,25 @@
             var username = $('#user1').val();
             var password = $('#password1').val();
             
-            if(password=="") {
+            if(password === "") {
                 alert("please enter a password");
                 $('#password1').focus();
                 return false;
             }
             
-            if(username != '' && password != ''){
+            if(username !== "" && password !== ""){
                 $.ajax({
-                    url: 'index.html',
+                    url: 'http://localhost:3000/Freelancers/',
                     type: 'POST',
                     data: {
                         username:username,
                         password:password
                     },
                     success: function(data) {
-                        var obj = JSON.parse(data);
+                        // var obj = JSON.parse(data);
                         console.log(data);
-                        
-                        if(obj.result != 'invalid') {
-                            alert("Login succeded");
-                            window.location = 'freelancers.html';
-                        }
+                        alert("Login succeded");
+                        window.location = 'freelancers.html';
                     }
                 });
             }

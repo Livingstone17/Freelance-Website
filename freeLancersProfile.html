@@ -32,7 +32,7 @@
                 font-size: 80px;  /* Preferred icon size */
                 display: inline-block;
                 line-height: 1;
-                text-transform: none;
+                text-transform: nonze;
                 letter-spacing: normal;
                 word-wrap: normal;
                 white-space: nowrap;
@@ -42,11 +42,26 @@
                 color:blue;
                 margin-bottom:10px;
             }
+            #yourProfile{
+              margin-top:20px;
+              width: 500px;
+              height: 500px;
+              background-color: cornsilk;
+              border-radius: 10px;
+              margin-left:320px;
+              box-shadow: 3em;
+            }
+            #bottom{
+              margin-top: 40px;
+            }
             #btnMy{
               border-radius:10px;
               color:white;
             }
-      
+            .container {
+              margin-top:80px;
+              text-align: center;
+            }
       
       
       </style>   
@@ -55,14 +70,14 @@
         
         <div class="container-fluid">
           <nav class="navbar navbar-expand-lg fixed-top container-fluid ">  
-            <a class="navbar-brand" href="index.html">Home</a>
+            <a class="navbar-brand" href="index.html">ENGAGER</a>
                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">  
                    <span class="navbar-toggler-icon"></span>
                </button>
                <div class="collapse navbar-collapse " id="navbarSupportedContent">    
                 <ul class="navbar-nav mr-4">
-                   <li class="nav-item"><a class="nav-link" data-value="about" href="#">Explore</a></li>  
-                   <li class="nav-item"><a class="nav-link " data-value="portfolio"href="#">Join</a></li>
+                   <li class="nav-item"><a class="nav-link" data-value="about" href="#">Welcome!</a></li>  
+                   <li class="nav-item"><a class="nav-link " data-value="portfolio"href="#">Explore</a></li>
                    <li class="nav-item"><a class="nav-link " data-value="team" href="#"></a></li>  
 
                 </ul> 
@@ -80,9 +95,9 @@
 
 
                  </div>
-                 <div>
+                 <div id="bottom">
                     <button id="btnMy" data-value="portfolio" class="btn btn-success"  data-toggle="modal" data-target="#editProfile">Edit Your Profile</button>
-                    <button type="button" class="btn btn-danger">Danger</button>
+                    <button type="button" id="deleteUser" class="btn btn-danger">Delete Profile</button>
                </div>   
         </div>
     </div>
@@ -136,7 +151,7 @@
                     </div>
                   </div>
                 </form>
-                <button type="button" class="btn btn-primary btn-lg btn-block">Update Profile</button>
+                <button type="button"  id="updateProfile" class="btn btn-primary btn-lg btn-block">Update Profile</button>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
