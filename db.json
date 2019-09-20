@@ -1,31 +1,17 @@
 {
   "Freelancers": [
     {
-      "id": 1,
-      "name": "Dele",
-      "firstname": "samuel",
-      "lastname": "john",
-      "specialty": "Content writting",
-      "email": "example@me.com",
-      "phonenumber": 1234567890,
-      "password": "omobolaji1",
-      "minimumwage": 45,
-      "bio": "",
-      "address": "",
-      "rating": 5
-    },
-    {
       "id": 2,
       "name": "Dele",
-      "firstname": "samuel",
-      "lastname": "john",
+      "firstname": "david",
+      "lastname": "dada",
       "specialty": "Content writting",
-      "email": "example@me.com",
-      "phonenumber": 1234567890,
+      "email": "example12@me.com",
+      "phonenumber": "08164224586",
       "password": "omobolaji1",
       "minimumwage": 45,
-      "bio": "",
-      "address": "",
+      "bio": "i love tech",
+      "address": "delta",
       "rating": 5
     },
     {
@@ -48,7 +34,7 @@
       "firstname": "samuel",
       "lastname": "john",
       "specialty": "Content writting",
-      "email": "example@me.com",
+      "email": "example3@me.com",
       "phonenumber": 1234567890,
       "password": "omobolaji1",
       "minimum wage": 45,
@@ -62,7 +48,7 @@
       "firstname": "samuel",
       "lastname": "john",
       "specialty": "Content writting",
-      "email": "example@me.com",
+      "email": "example4@me.com",
       "phonenumber": 1234567890,
       "password": "omobolaji1",
       "minimumwage": 45,
@@ -76,7 +62,7 @@
       "firstname": "samuel",
       "lastname": "john",
       "specialty": "Content writting",
-      "email": "example@me.com",
+      "email": "example5@me.com",
       "phonenumber": 1234567890,
       "password": "omobolaji1",
       "minimumwage": 45,
@@ -86,74 +72,17 @@
     },
     {
       "id": 7,
-      "name": "Dele",
-      "firstname": "samuel",
+      "name": "Jane",
+      "firstname": "smith",
       "lastname": "john",
       "specialty": "Content writting",
-      "email": "example@me.com",
+      "email": "example6@me.com",
       "phonenumber": 1234567890,
       "password": "omobolaji1",
       "minimumwage": 45,
       "bio": "",
       "address": "",
       "rating": 5
-    },
-    {
-      "name": "Peter",
-      "id": 8
-    },
-    {
-      "name": "mary",
-      "id": 9
-    },
-    {
-      "name": "bunmi",
-      "mail": "bumight12@us.co",
-      "password": "omobunmi",
-      "id": 10
-    },
-    {
-      "name": "loveth",
-      "mail": "loveth@yahoo.com",
-      "password": "omobolaji1",
-      "id": 11
-    },
-    {
-      "name": "peter",
-      "mail": "boldam1@gmail.com",
-      "phonenumber": "08165786950",
-      "password": "",
-      "id": 12
-    },
-    {
-      "username": "zaophos",
-      "email": "peterson.omobolaji@gmail.com",
-      "password": "omobolaji1",
-      "id": 13
-    },
-    {
-      "username": "fredaline",
-      "email": "jsdjsfs.com",
-      "password": "bola12",
-      "id": 14
-    },
-    {
-      "username": "jide",
-      "email": "oluwaseun@gmail.com",
-      "password": "omogboye3",
-      "id": 15
-    },
-    {
-      "username": "ZaoPhos",
-      "email": "hdjsdjsds.com",
-      "password": "hsjdjsdsd",
-      "id": 16
-    },
-    {
-      "username": "hhada",
-      "email": "hjsdshjad.com",
-      "password": "omobolaji1",
-      "id": 17
     }
   ],
   "users": [

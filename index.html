@@ -230,7 +230,7 @@
         
         $('#submit').click(function(e) {
             e.preventDefault();
-            var username = $('#user1').val();
+            var email = $('#email1').val();
             var password = $('#password1').val();
             
             if(password === "") {
@@ -239,20 +239,19 @@
                 return false;
             }
             
-            if(username !== "" && password !== ""){
+            if(email !== "" && password !== ""){
                 $.ajax({
-                    url: 'http://localhost:3000/Freelancers/',
-                    type: 'POST',
-                    data: {
-                        username:username,
-                        password:password
-                    },
-                    success: function(data) {
+                    url: `http://localhost:3000/Freelancers?email=${email}&password=${password}`,
+                }).done(function(data) {
                         // var obj = JSON.parse(data);
-                        console.log(data);
+                        if(data.length){
                         alert("Login succeded");
                         window.location = 'freelancers.html';
+                        return;
                     }
+
+                    alert('invalid credentials!')
+                    
                 });
             }
             
